@@ -20,7 +20,7 @@ export default function MainNavigation() {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
-              to="/products"
+              to="products"
             >
               Products
             </NavLink>
@@ -30,7 +30,7 @@ export default function MainNavigation() {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
-              to="/pages"
+              to="pages"
             >
               Pages
             </NavLink>

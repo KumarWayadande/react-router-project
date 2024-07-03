@@ -1,4 +1,4 @@
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export default function ProjectDetail() {
   const {productId} = useParams();
@@ -6,7 +6,7 @@ export default function ProjectDetail() {
     <>
       <h1>Product Details!</h1>
       <p>{`Product Id : ${productId}`}</p>
-      <button><Link to="/products">Back</Link></button>
+      <button><Link to=".." relative="path">Back</Link></button>
     </>
   );
 }

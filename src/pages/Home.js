@@ -4,14 +4,14 @@ export default function Home() {
 
     const navigate = useNavigate();
 
-    const handleNavigate = () => {
-        navigate("/pages");
+    const handleNavigate = (urlPath) => {
+        navigate(urlPath);
     }
 
   return (
     <>
       <h1>This is home page</h1>
-      <button onClick={handleNavigate}>Goto Pages</button>
+      <button onClick={() => handleNavigate("pages")}>Goto Pages</button>
     </>
   );
 }
